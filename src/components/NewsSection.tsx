@@ -29,7 +29,7 @@ const NewsSection = () => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-8">
               <div>
                 <div className="space-y-4 mb-6">
                   <div className="flex items-center gap-2">
@@ -69,9 +69,42 @@ const NewsSection = () => {
                 </div>
               </div>
 
+              {/* Image Gallery */}
               <div className="space-y-4">
-                <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 rounded-xl p-6 border border-blue-200/20">
-                  <h4 className="font-semibold mb-3 flex items-center gap-2">
+                <div className="grid grid-cols-2 gap-3">
+                  <img 
+                    src="/lovable-uploads/f6ad9f90-5e2b-4a30-9ed4-4e6dfe4e61c2.png" 
+                    alt="QCRI Hackathon workspace and collaboration"
+                    className="w-full h-32 object-cover rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow"
+                  />
+                  <img 
+                    src="/lovable-uploads/4ffe5d6e-5e91-4421-a8b3-27ad3949b5de.png" 
+                    alt="Development environment and coding session"
+                    className="w-full h-32 object-cover rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow"
+                  />
+                </div>
+                
+                <img 
+                  src="/lovable-uploads/3c4e4f3c-c80e-49ef-8797-6cfa7b0fc25e.png" 
+                  alt="QCRI research facility and innovation space"
+                  className="w-full h-40 object-cover rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow"
+                />
+
+                <div className="grid grid-cols-2 gap-3">
+                  <img 
+                    src="/lovable-uploads/ec36d9b8-5b08-4c88-976f-b9b82b0c3b5b.png" 
+                    alt="Technical discussions and mentorship"
+                    className="w-full h-32 object-cover rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow"
+                  />
+                  <img 
+                    src="/lovable-uploads/9bb62bd0-3b14-49b5-8d93-7df99c5b9a6b.png" 
+                    alt="Hackathon team collaboration and networking"
+                    className="w-full h-32 object-cover rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow"
+                  />
+                </div>
+
+                <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 rounded-xl p-4 border border-blue-200/20 mt-4">
+                  <h4 className="font-semibold mb-2 flex items-center gap-2">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                     Event Experience
                   </h4>
@@ -79,30 +112,6 @@ const NewsSection = () => {
                     The hackathon provided an immersive environment for innovation, featuring modern 
                     development facilities, collaborative workspaces, and direct access to QCRI's 
                     research resources and mentorship.
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-br from-green-500/10 to-green-600/5 rounded-xl p-6 border border-green-200/20">
-                  <h4 className="font-semibold mb-3 flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    Technical Skills Applied
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    Leveraged expertise in Python, machine learning frameworks, and collaborative 
-                    development practices. The event reinforced my passion for AI/ML research 
-                    and real-world problem solving.
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 rounded-xl p-6 border border-purple-200/20">
-                  <h4 className="font-semibold mb-3 flex items-center gap-2">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                    Professional Impact
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    This experience strengthened my connection with Qatar's AI research community 
-                    and provided valuable insights into industry-level development practices 
-                    and collaborative innovation.
                   </p>
                 </div>
               </div>
