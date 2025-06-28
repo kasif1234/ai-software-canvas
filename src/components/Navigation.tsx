@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowUp, ArrowDown } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 interface NavigationProps {
   darkMode: boolean;
@@ -10,12 +11,29 @@ interface NavigationProps {
 
 const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+    setIsMenuOpen(false);
+  };
+
+  const handleNavigation = (path: string) => {
+    navigate(path);
     setIsMenuOpen(false);
   };
 
@@ -23,9 +41,12 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="font-bold text-xl gradient-text">
+          <button 
+            onClick={() => handleNavigation('/')}
+            className="font-bold text-xl gradient-text"
+          >
             Portfolio
-          </div>
+          </button>
           
           <div className="hidden md:flex items-center space-x-8">
             <button 
@@ -51,6 +72,12 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
               className="hover:text-primary transition-colors"
             >
               Certifications
+            </button>
+            <button 
+              onClick={() => handleNavigation('/news')}
+              className="hover:text-primary transition-colors"
+            >
+              News
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
@@ -92,6 +119,12 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
                 {section}
               </button>
             ))}
+            <button
+              onClick={() => handleNavigation('/news')}
+              className="block px-3 py-2 text-base font-medium hover:text-primary transition-colors"
+            >
+              News
+            </button>
           </div>
         </div>
       )}
