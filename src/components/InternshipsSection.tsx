@@ -80,8 +80,12 @@ const InternshipsSection = () => {
           {/* Qatar Computing Research Institute */}
           <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                <Building className="h-8 w-8 text-primary" />
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center p-2 border border-border">
+                <img 
+                  src="/lovable-uploads/0603fe36-fb04-4d83-b7ec-72ec3aa21a95.png" 
+                  alt="Qatar Computing Research Institute"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">Qatar Computing Research Institute (QCRI)</h3>
@@ -137,8 +141,12 @@ const InternshipsSection = () => {
           {/* Hamad Medical Corporation */}
           <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 bg-red-500/10 rounded-lg flex items-center justify-center">
-                <Building className="h-8 w-8 text-red-500" />
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center p-2 border border-border">
+                <img 
+                  src="/lovable-uploads/bbf9bb19-62a6-435c-8630-fd39b598e5ea.png" 
+                  alt="Hamad Medical Corporation"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">Hamad Medical Corporation</h3>

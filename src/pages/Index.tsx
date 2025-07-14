@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import CompanyLogosSection from "@/components/CompanyLogosSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
 import CertificationsSection from "@/components/CertificationsSection";
@@ -28,6 +29,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <Navigation darkMode={darkMode} setDarkMode={setDarkMode} />
       <HeroSection />
+      <CompanyLogosSection />
       <AboutSection />
       <ProjectsSection />
       <SkillsSection />
