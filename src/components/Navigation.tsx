@@ -74,6 +74,12 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
               Certifications
             </button>
             <button 
+              onClick={() => handleNavigation('/internships')}
+              className="hover:text-primary transition-colors"
+            >
+              Internships
+            </button>
+            <button 
               onClick={() => handleNavigation('/news')}
               className="hover:text-primary transition-colors"
             >
@@ -119,6 +125,12 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
                 {section}
               </button>
             ))}
+            <button
+              onClick={() => handleNavigation('/internships')}
+              className="block px-3 py-2 text-base font-medium hover:text-primary transition-colors"
+            >
+              Internships
+            </button>
             <button
               onClick={() => handleNavigation('/news')}
               className="block px-3 py-2 text-base font-medium hover:text-primary transition-colors"
