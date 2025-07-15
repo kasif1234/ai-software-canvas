@@ -1,13 +1,13 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
-  const scrollToProjects = () => {
-    const element = document.getElementById('projects');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const navigate = useNavigate();
+
+  const goToProjects = () => {
+    navigate('/projects');
   };
 
   return (
@@ -38,7 +38,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
             <Button 
               size="lg" 
-              onClick={scrollToProjects}
+              onClick={goToProjects}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg glow-effect"
             >
               Explore My Work

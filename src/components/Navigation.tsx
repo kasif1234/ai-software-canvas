@@ -56,7 +56,7 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
               About
             </button>
             <button 
-              onClick={() => scrollToSection('projects')}
+              onClick={() => handleNavigation('/projects')}
               className="hover:text-primary transition-colors"
             >
               Projects
@@ -116,7 +116,7 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
       {isMenuOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            {['about', 'projects', 'skills', 'certifications', 'contact'].map((section) => (
+            {['about', 'skills', 'certifications', 'contact'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
@@ -125,6 +125,12 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
                 {section}
               </button>
             ))}
+            <button
+              onClick={() => handleNavigation('/projects')}
+              className="block px-3 py-2 text-base font-medium hover:text-primary transition-colors"
+            >
+              Projects
+            </button>
             <button
               onClick={() => handleNavigation('/internships')}
               className="block px-3 py-2 text-base font-medium hover:text-primary transition-colors"

@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import CompanyLogosSection from "@/components/CompanyLogosSection";
-import ProjectsSection from "@/components/ProjectsSection";
+import CurrentlyReading from "@/components/CurrentlyReading";
 import SkillsSection from "@/components/SkillsSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import ContactSection from "@/components/ContactSection";
@@ -31,7 +31,7 @@ const Index = () => {
       <HeroSection />
       <CompanyLogosSection />
       <AboutSection />
-      <ProjectsSection />
+      <CurrentlyReading />
       <SkillsSection />
       <CertificationsSection />
       <ContactSection />
