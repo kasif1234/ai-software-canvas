@@ -1,5 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const AboutSection = () => {
   const highlights = [
@@ -22,7 +23,7 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
             <Card className="bg-card/50 backdrop-blur-sm border-primary/20">
               <CardContent className="p-8">
@@ -55,6 +56,48 @@ const AboutSection = () => {
                 <p className="text-lg">Projects Completed</p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Freelance Work Section */}
+        <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-8 md:p-12">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              Global <span className="gradient-text">Freelance</span> Impact
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Delivering professional software solutions to clients worldwide through Fiverr
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <div className="group cursor-pointer transform transition-all duration-500 hover:scale-110 hover:-translate-y-2">
+                    <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 w-64 h-40 flex items-center justify-center">
+                      <img 
+                        src="/lovable-uploads/630f9ff6-9bd0-42f3-b43c-320208600135.png" 
+                        alt="Fiverr"
+                        className="max-w-full max-h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                      />
+                    </div>
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent className="max-w-md p-4">
+                  <div className="space-y-2">
+                    <p className="font-semibold">Global Freelance Success</p>
+                    <ul className="text-sm space-y-1 text-left">
+                      <li>• Delivered over 10,000 QAR worth of customized software and automation solutions</li>
+                      <li>• Served clients across education, healthcare, and e-commerce sectors</li>
+                      <li>• Designed tools using Python, Java, C++, R, and Excel VBA</li>
+                      <li>• Implemented AI agents and low-code automation platforms</li>
+                      <li>• Maintained strong client satisfaction and repeat contracts</li>
+                    </ul>
+                  </div>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </div>
         </div>
       </div>
