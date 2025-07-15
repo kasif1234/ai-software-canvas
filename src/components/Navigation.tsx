@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowUp, ArrowDown } from 'lucide-react';
+import { Sun, Moon } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 interface NavigationProps {
@@ -96,13 +96,22 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
               variant="ghost"
               size="sm"
               onClick={() => setDarkMode(!darkMode)}
-              className="ml-4"
+              className="ml-4 hover:bg-accent"
+              title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
             >
-              {darkMode ? <ArrowUp className="h-4 w-4" /> : <ArrowDown className="h-4 w-4" />}
+              {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setDarkMode(!darkMode)}
+              title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            >
+              {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </Button>
             <Button
               variant="ghost"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
