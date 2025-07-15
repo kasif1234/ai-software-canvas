@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -23,40 +22,13 @@ const CertificationsSection = () => {
       featured: true
     },
     {
-      title: "Machine Learning Engineering",
-      issuer: "Coursera",
+      title: "CCNA: Introduction to Networks",
+      issuer: "Cisco Networking Academy",
       status: "Completed",
-      date: "2023",
-      description: "Production-ready ML systems, MLOps, and scalable AI deployment strategies",
-      level: "Intermediate",
-      featured: false
-    },
-    {
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      status: "Planned",
       date: "2024",
-      description: "Foundation certification for cloud computing and AWS services",
+      description: "Foundation networking certification covering network fundamentals, routing, and switching",
       level: "Foundation",
-      featured: false
-    },
-    {
-      title: "Computer Vision Fundamentals",
-      issuer: "edX",
-      status: "Completed",
-      date: "2023",
-      description: "Image processing, object detection, and computer vision applications",
-      level: "Intermediate",
-      featured: false
-    },
-    {
-      title: "IoT Systems Development",
-      issuer: "Udemy",
-      status: "Completed",
-      date: "2023",
-      description: "End-to-end IoT system design and implementation with various protocols",
-      level: "Intermediate",
-      featured: false
+      featured: true
     }
   ];
 
