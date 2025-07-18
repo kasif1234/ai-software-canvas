@@ -83,7 +83,7 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
               onClick={() => handleNavigation('/news')}
               className="hover:text-primary transition-colors"
             >
-              News
+              Growth Roadmap
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
@@ -150,7 +150,7 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
               onClick={() => handleNavigation('/news')}
               className="block px-3 py-2 text-base font-medium hover:text-primary transition-colors"
             >
-              News
+              Growth Roadmap
             </button>
           </div>
         </div>
