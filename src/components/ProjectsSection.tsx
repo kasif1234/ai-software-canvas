@@ -3,136 +3,152 @@ import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const ProjectsSection = () => {
-  const projects = [
+  const [activeTab, setActiveTab] = useState('inProgress');
+
+  const inProgressProjects = [
     {
-      title: "Decentralized Mesh Network for Disaster Communication",
-      description: "Built a resilient communication system using ESP32 microcontrollers and LoRa technology for disaster scenarios where traditional infrastructure fails.",
-      tags: ["ESP32", "LoRa", "Linux", "Networking", "IoT"],
-      category: "System Design",
-      featured: true
-    },
-    {
-      title: "GenAI for Human-Centric Table Understanding",
-      description: "Developed an AI system that understands and processes complex table structures using advanced language models and JSON parsing.",
-      tags: ["Python", "LLMs", "JSON", "GenAI", "NLP"],
-      category: "AI",
-      featured: true
-    },
-    {
-      title: "Surgical Tool Detection using Deep Learning",
-      description: "Created a computer vision system for real-time surgical tool detection and tracking using PyTorch and advanced CNN architectures.",
-      tags: ["PyTorch", "OpenCV", "Computer Vision", "Deep Learning"],
-      category: "ML",
-      featured: true
-    },
-    {
-      title: "Smart IoT Environmental Monitor",
-      description: "Designed an IoT system for environmental monitoring with real-time data collection and cloud-based analytics.",
-      tags: ["Arduino", "Sensors", "Cloud", "Data Analytics"],
-      category: "IoT",
-      featured: false
-    },
-    {
-      title: "Distributed Task Scheduler",
-      description: "Built a scalable task scheduling system with load balancing and fault tolerance capabilities.",
-      tags: ["Java", "Microservices", "Docker", "Redis"],
-      category: "System Design",
-      featured: false
-    },
-    {
-      title: "Natural Language Query Interface",
-      description: "Created an intelligent interface that converts natural language queries to database operations.",
-      tags: ["Python", "SQL", "Transformers", "API"],
-      category: "AI",
-      featured: false
+      title: "Surgical Data Semantic Segmentation",
+      organization: "Hamad Medical Corporation",
+      organizationLogo: "/lovable-uploads/c06a3d46-48ff-4dda-aca9-822d5d0e2a46.png",
+      projectImage: "/lovable-uploads/145c731b-d3be-4b20-866d-db3bc133917d.png",
+      description: "Train a deep learning model on EndoVis2017 dataset. Your model needs to segment the different types of classes within the surgical frame. Dataset classes: Bipolar Forceps, Prograsp Forceps, Large Needle Driver, Suction Instrument, Clip Applier, Monopolar, Curved Scissors, Ultrasound Probe, Vessel Sealer, Grasping Retractor.",
+      technicalDetails: "The model architecture combines CNN feature extraction with Transformer layers for semantic segmentation. Features are processed through multiple scales (1/2, 1/4, 1/8) with hidden features, linear projection, and transformer layers (n=12). The segmentation head uses Conv3x3, ReLU, upsampling, and feature concatenation for precise surgical instrument identification.",
+      supervisor: {
+        name: "Dr. Shidin Balakrishnan, MD, MPH",
+        linkedin: "https://www.linkedin.com/in/shidin-balakrishnan/",
+        description: "Dr. Shidin Balakrishnan is a medical professional with expertise in public health and a focus on leveraging technology for healthcare advancements. His work often involves applying data-driven approaches and AI to improve medical diagnostics and patient outcomes."
+      },
+      tags: ["Computer Vision", "Deep Learning", "Medical AI", "Semantic Segmentation", "PyTorch"]
     }
   ];
 
-  const categories = ["All", "AI", "ML", "System Design", "IoT"];
-  const [selectedCategory, setSelectedCategory] = useState("All");
-
-  const filteredProjects = selectedCategory === "All" 
-    ? projects 
-    : projects.filter(project => project.category === selectedCategory);
+  const completedProjects = [];
 
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Featured <span className="gradient-text">Projects</span>
+            My <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            From AI-powered solutions to distributed systems, here's what I've been building
+            Exploring the intersection of AI, healthcare, and technology
           </p>
           
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-2 mb-12">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={selectedCategory === category ? "default" : "outline"}
-                onClick={() => setSelectedCategory(category)}
-                className="mb-2"
-              >
-                {category}
-              </Button>
-            ))}
+          {/* Project Type Toggle */}
+          <div className="flex justify-center gap-2 mb-12">
+            <Button
+              variant={activeTab === 'inProgress' ? "default" : "outline"}
+              onClick={() => setActiveTab('inProgress')}
+              className="px-6"
+            >
+              Projects in Progress
+            </Button>
+            <Button
+              variant={activeTab === 'completed' ? "default" : "outline"}
+              onClick={() => setActiveTab('completed')}
+              className="px-6"
+            >
+              Completed Projects
+            </Button>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project, index) => (
-            <Card 
-              key={index} 
-              className={`hover:shadow-xl transition-all duration-300 hover:-translate-y-2 ${
-                project.featured ? 'border-primary/50 bg-card/80' : 'bg-card/50'
-              } backdrop-blur-sm`}
-            >
-              <CardHeader>
-                <div className="flex justify-between items-start mb-2">
-                  <Badge variant={project.featured ? "default" : "secondary"}>
-                    {project.category}
-                  </Badge>
-                  {project.featured && (
-                    <Badge className="bg-gradient-to-r from-blue-500 to-blue-600">
-                      Featured
-                    </Badge>
-                  )}
-                </div>
-                <CardTitle className="text-xl font-bold">
-                  {project.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {project.description}
-                </p>
+        {/* Projects in Progress */}
+        {activeTab === 'inProgress' && (
+          <div className="space-y-8">
+            {inProgressProjects.map((project, index) => (
+              <Card key={index} className="overflow-hidden border-primary/20 bg-card/80 backdrop-blur-sm">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center gap-4 mb-4">
+                    <img 
+                      src={project.organizationLogo} 
+                      alt={project.organization}
+                      className="h-16 w-auto"
+                    />
+                    <div>
+                      <Badge className="mb-2">In Progress</Badge>
+                      <CardTitle className="text-2xl font-bold">{project.title}</CardTitle>
+                      <p className="text-muted-foreground text-lg">{project.organization}</p>
+                    </div>
+                  </div>
+                </CardHeader>
                 
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag, tagIndex) => (
-                    <Badge key={tagIndex} variant="outline" className="text-xs">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-                
-                <div className="flex gap-2">
-                  <Button className="flex-1" size="sm">
-                    View Project
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                  <Button variant="outline" size="sm">
-                    <Github className="h-4 w-4" />
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+                <CardContent className="space-y-6">
+                  {/* Project Diagram */}
+                  <div className="w-full">
+                    <img 
+                      src={project.projectImage} 
+                      alt="Project Architecture Diagram"
+                      className="w-full h-auto rounded-lg border border-border"
+                    />
+                  </div>
+
+                  {/* Project Description */}
+                  <div className="space-y-4">
+                    <h4 className="text-lg font-semibold text-primary">Project Overview</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {project.description}
+                    </p>
+                    
+                    <h4 className="text-lg font-semibold text-primary">Technical Architecture</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {project.technicalDetails}
+                    </p>
+                  </div>
+
+                  {/* Supervisor Information */}
+                  <div className="bg-muted/30 p-6 rounded-lg">
+                    <h4 className="text-lg font-semibold text-primary mb-3">Project Supervision</h4>
+                    <div className="flex items-center gap-3 mb-3">
+                      <h5 className="font-medium text-foreground">{project.supervisor.name}</h5>
+                      <Button variant="ghost" size="sm" asChild>
+                        <a 
+                          href={project.supervisor.linkedin} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                          LinkedIn
+                        </a>
+                      </Button>
+                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {project.supervisor.description}
+                    </p>
+                  </div>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag, tagIndex) => (
+                      <Badge key={tagIndex} variant="outline">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        )}
+
+        {/* Completed Projects */}
+        {activeTab === 'completed' && (
+          <div className="text-center py-20">
+            <div className="max-w-md mx-auto">
+              <h3 className="text-xl font-semibold text-muted-foreground mb-4">
+                No completed projects yet
+              </h3>
+              <p className="text-muted-foreground">
+                Stay tuned for updates as I complete my ongoing projects!
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
