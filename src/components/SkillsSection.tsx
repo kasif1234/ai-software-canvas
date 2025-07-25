@@ -1,6 +1,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import tensorflowLogo from "@/assets/tensorflow-logo.png";
+import pytorchLogo from "@/assets/pytorch-logo.png";
 
 const SkillsSection = () => {
   const skillCategories = [
@@ -101,6 +103,33 @@ const SkillsSection = () => {
               </div>
               <h4 className="font-semibold text-yellow-400 mb-2">Growing</h4>
               <p className="text-sm text-muted-foreground">DevOps, Mobile Development, Blockchain</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Specialist at Section */}
+        <div className="mt-16 text-center">
+          <h3 className="text-2xl font-bold mb-8">Specialist at:</h3>
+          <div className="flex justify-center items-center gap-12 max-w-2xl mx-auto">
+            <div className="text-center">
+              <div className="w-24 h-24 mx-auto mb-4 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg flex items-center justify-center hover:shadow-lg transition-all duration-300">
+                <img 
+                  src={tensorflowLogo} 
+                  alt="TensorFlow" 
+                  className="w-16 h-16 object-contain"
+                />
+              </div>
+              <h4 className="font-semibold text-lg">TensorFlow</h4>
+            </div>
+            <div className="text-center">
+              <div className="w-24 h-24 mx-auto mb-4 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg flex items-center justify-center hover:shadow-lg transition-all duration-300">
+                <img 
+                  src={pytorchLogo} 
+                  alt="PyTorch" 
+                  className="w-16 h-16 object-contain"
+                />
+              </div>
+              <h4 className="font-semibold text-lg">PyTorch</h4>
             </div>
           </div>
         </div>
