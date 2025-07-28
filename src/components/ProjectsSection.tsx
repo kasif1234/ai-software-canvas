@@ -22,6 +22,20 @@ const ProjectsSection = () => {
         description: "Dr. Shidin Balakrishnan is a medical professional with expertise in public health and a focus on leveraging technology for healthcare advancements. His work often involves applying data-driven approaches and AI to improve medical diagnostics and patient outcomes."
       },
       tags: ["Computer Vision", "Deep Learning", "Medical AI", "Semantic Segmentation", "PyTorch"]
+    },
+    {
+      title: "Smart Classroom AI Vision System",
+      organization: "Edgage - Qatar Science and Technology Park (QSTP)",
+      organizationLogo: "/lovable-uploads/5f841d15-7930-4d3a-8779-14a669a404f3.png",
+      projectImage: "/lovable-uploads/5f841d15-7930-4d3a-8779-14a669a404f3.png",
+      description: "Building three computer vision models for real-time use in smart classrooms: Student Attention Detection (identifies focused vs. distracted students using facial orientation and gaze tracking), Engagement Detection (classifies engagement levels using transfer learning with fine-tuned VGG16 on the DAiSEE dataset), and Mood Detection (detects emotional states like happy, confused, bored via facial expression recognition using FER datasets).",
+      technicalDetails: "Responsible for the full AI pipeline, from dataset curation and training to model optimization and deployment strategy. The engagement detection model uses VGG16 architecture with transfer learning on the DAiSEE dataset. The system processes input video clips through convolutional layers, feature extraction, flattening, and dense layers for classification. Focus on cost-efficient deployment techniques using model quantization and optimization to ensure real-time performance in classroom environments.",
+      supervisor: {
+        name: "Edgage Development Team",
+        linkedin: "",
+        description: "Working as an AI/ML developer at Edgage, a startup focused on bridging AI research and real-world deployment. The project aims to empower educators to better understand and respond to student behavior through advanced computer vision technology."
+      },
+      tags: ["Computer Vision", "TensorFlow", "VGG16", "CNNs", "DAiSEE", "FER2013", "OpenCV", "Model Optimization", "Real-time AI"]
     }
   ];
 
@@ -45,7 +59,7 @@ const ProjectsSection = () => {
               onClick={() => setActiveTab('inProgress')}
               className="px-6"
             >
-              Projects in Progress
+              Projects in Progress (2)
             </Button>
             <Button
               variant={activeTab === 'completed' ? "default" : "outline"}
