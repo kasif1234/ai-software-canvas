@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import ExperienceHighlightsSection from "@/components/ExperienceHighlightsSection";
 import CompanyLogosSection from "@/components/CompanyLogosSection";
 import CurrentlyReading from "@/components/CurrentlyReading";
 import SkillsSection from "@/components/SkillsSection";
@@ -31,6 +32,7 @@ const Index = () => {
       <HeroSection />
       <CompanyLogosSection />
       <AboutSection />
+      <ExperienceHighlightsSection />
       <CurrentlyReading />
       <SkillsSection />
       <CertificationsSection />
