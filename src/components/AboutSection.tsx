@@ -46,14 +46,30 @@ const AboutSection = () => {
           </div>
 
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-primary/20 to-blue-600/20 rounded-2xl p-8 flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <div className="text-6xl font-bold gradient-text">3.5+</div>
-                <p className="text-xl font-semibold">GPA Achievement</p>
-                <div className="text-4xl font-bold gradient-text">2+</div>
-                <p className="text-lg">Years of Experience</p>
-                <div className="text-4xl font-bold gradient-text">10+</div>
-                <p className="text-lg">Projects Completed</p>
+            <div className="aspect-square bg-gradient-to-br from-primary/20 to-blue-600/20 rounded-2xl p-2 flex items-center justify-center">
+              <div className="relative w-full h-full rounded-xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/c903ab95-47f1-4c00-8ec4-82dfeaec8ea6.png" 
+                  alt="Professional headshot"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+              </div>
+            </div>
+            
+            {/* Stats moved below the photo */}
+            <div className="mt-8 grid grid-cols-3 gap-4 text-center">
+              <div className="space-y-1">
+                <div className="text-3xl font-bold gradient-text">3.5+</div>
+                <p className="text-sm font-medium">GPA</p>
+              </div>
+              <div className="space-y-1">
+                <div className="text-3xl font-bold gradient-text">2+</div>
+                <p className="text-sm font-medium">Years Exp</p>
+              </div>
+              <div className="space-y-1">
+                <div className="text-3xl font-bold gradient-text">10+</div>
+                <p className="text-sm font-medium">Projects</p>
               </div>
             </div>
           </div>
