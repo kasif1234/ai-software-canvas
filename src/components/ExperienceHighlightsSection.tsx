@@ -26,14 +26,14 @@ const ExperienceHighlightsSection = () => {
     {
       id: "qu",
       name: "Qatar University",
-      logo: "/lovable-uploads/4389ecdd-9984-4cbf-a2bc-2f949c89b492.png",
+      logo: "/lovable-uploads/010401cc-bf92-4e3b-8330-040f544ccd2a.png",
       image: "/lovable-uploads/f38dbddb-ea1b-4afc-87e4-67320966f3ef.png",
       description: "Academic excellence in Computer Engineering"
     },
     {
       id: "hmc",
       name: "Hamad Medical Corporation",
-      logo: "/lovable-uploads/3cd83883-be22-4d7c-869c-4c2cebb26baa.png",
+      logo: "/lovable-uploads/de9073e3-641a-45a0-871b-330f78340347.png",
       image: "/lovable-uploads/c8682b13-8d10-4e16-ac46-97b80ffa86a3.png",
       description: "Surgical robotics and VLM research"
     }
