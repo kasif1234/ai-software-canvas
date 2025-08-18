@@ -5,8 +5,8 @@ const ExperienceHighlightsSection = () => {
     {
       id: "cmuq",
       name: "Carnegie Mellon University Qatar",
-      logo: "/lovable-uploads/630f9ff6-9bd0-42f3-b43c-320208600135.png",
-      image: "/lovable-uploads/b7e33708-df7c-40b1-a866-3cd1e4109180.png",
+      logo: "/lovable-uploads/240410a3-02c6-429c-86b9-dcbc86909c11.png",
+      image: "/lovable-uploads/ce981403-c89a-4a53-9a28-0911fa71172a.png",
       description: "Hackathon participation and collaborative innovation"
     },
     {
