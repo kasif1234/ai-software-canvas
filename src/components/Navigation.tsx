@@ -62,6 +62,12 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
               Projects
             </button>
             <button 
+              onClick={() => handleNavigation('/daily-tracker')}
+              className="hover:text-primary transition-colors"
+            >
+              Daily Tracker
+            </button>
+            <button 
               onClick={() => scrollToSection('skills')}
               className="hover:text-primary transition-colors"
             >
@@ -139,6 +145,12 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
               className="block px-3 py-2 text-base font-medium hover:text-primary transition-colors"
             >
               Projects
+            </button>
+            <button
+              onClick={() => handleNavigation('/daily-tracker')}
+              className="block px-3 py-2 text-base font-medium hover:text-primary transition-colors"
+            >
+              Daily Tracker
             </button>
             <button
               onClick={() => handleNavigation('/internships')}
