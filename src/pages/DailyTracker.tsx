@@ -56,7 +56,7 @@ const DailyTracker = () => {
                     <img 
                       src="/lovable-uploads/26a2f970-cb1d-497f-9e3d-ae9eaea43384.png" 
                       alt="Black box method diagram" 
-                      className="w-20 h-16 rounded-lg object-cover"
+                      className="w-32 h-24 rounded-lg object-cover"
                     />
                     <div className="flex-1">
                       <h3 className="text-2xl font-semibold text-primary mb-3">Black Box Method</h3>
