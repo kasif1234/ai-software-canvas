@@ -30,10 +30,19 @@ const DailyTracker = () => {
               <div className="space-y-6">
                 {/* Anki Method */}
                 <div className="bg-card rounded-lg border border-border p-6">
-                  <h3 className="text-2xl font-semibold text-primary mb-3">Anki Flashcards</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Spaced repetition system for long-term retention of key concepts, algorithms, and technical knowledge.
-                  </p>
+                  <div className="flex items-start gap-4 mb-4">
+                    <img 
+                      src="/lovable-uploads/b70e695e-e6a5-40af-94a2-759dd3f36140.png" 
+                      alt="Anki app icon" 
+                      className="w-16 h-16 rounded-lg"
+                    />
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-semibold text-primary mb-3">Anki Flashcards</h3>
+                      <p className="text-muted-foreground mb-4">
+                        Spaced repetition system for long-term retention of key concepts, algorithms, and technical knowledge.
+                      </p>
+                    </div>
+                  </div>
                   <div className="bg-primary/5 rounded-lg p-4">
                     <p className="text-sm text-muted-foreground">
                       <strong>Usage:</strong> Daily review sessions focusing on algorithm complexity, data structures, and core CS concepts.
@@ -43,10 +52,19 @@ const DailyTracker = () => {
 
                 {/* Black Box Method */}
                 <div className="bg-card rounded-lg border border-border p-6">
-                  <h3 className="text-2xl font-semibold text-primary mb-3">Black Box Method</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Understanding systems and algorithms by focusing on inputs, outputs, and behavior without getting lost in implementation details initially.
-                  </p>
+                  <div className="flex items-start gap-4 mb-4">
+                    <img 
+                      src="/lovable-uploads/26a2f970-cb1d-497f-9e3d-ae9eaea43384.png" 
+                      alt="Black box method diagram" 
+                      className="w-20 h-16 rounded-lg object-cover"
+                    />
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-semibold text-primary mb-3">Black Box Method</h3>
+                      <p className="text-muted-foreground mb-4">
+                        Understanding systems and algorithms by focusing on inputs, outputs, and behavior without getting lost in implementation details initially.
+                      </p>
+                    </div>
+                  </div>
                   <div className="bg-primary/5 rounded-lg p-4">
                     <p className="text-sm text-muted-foreground">
                       <strong>Application:</strong> When learning new algorithms, first understand what they do and their complexity, then dive into implementation.
