@@ -51,24 +51,24 @@ const DailyTracker = () => {
                 </div>
 
                 {/* Black Box Method */}
-                <div className="bg-card rounded-lg border border-border p-6">
-                  <div className="flex items-start gap-4 mb-4">
+<div className="bg-card rounded-lg border border-border p-6">
+                  <div className="mb-4">
                     <img 
                       src="/lovable-uploads/26a2f970-cb1d-497f-9e3d-ae9eaea43384.png" 
                       alt="Black box method diagram" 
-                      className="w-32 h-24 rounded-lg object-cover"
+                      className="w-full max-w-md mx-auto rounded-lg object-contain"
                     />
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-semibold text-primary mb-3">Black Box Method</h3>
-                      <p className="text-muted-foreground mb-4">
-                        Understanding systems and algorithms by focusing on inputs, outputs, and behavior without getting lost in implementation details initially.
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold text-primary mb-3">Black Box Method</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Understanding systems and algorithms by focusing on inputs, outputs, and behavior without getting lost in implementation details initially.
+                    </p>
+                    <div className="bg-primary/5 rounded-lg p-4">
+                      <p className="text-sm text-muted-foreground">
+                        <strong>Application:</strong> When learning new algorithms, first understand what they do and their complexity, then dive into implementation.
                       </p>
                     </div>
-                  </div>
-                  <div className="bg-primary/5 rounded-lg p-4">
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Application:</strong> When learning new algorithms, first understand what they do and their complexity, then dive into implementation.
-                    </p>
                   </div>
                 </div>
               </div>
