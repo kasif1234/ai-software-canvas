@@ -71,6 +71,28 @@ const DailyTracker = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Breaking Things Down Method */}
+                <div className="bg-card rounded-lg border border-border p-6">
+                  <div className="mb-4">
+                    <img 
+                      src="/lovable-uploads/4adb899f-bfe0-4620-b27d-ed5027a15b5f.png" 
+                      alt="Breaking things down diagram showing hierarchical problem decomposition" 
+                      className="w-full max-w-md mx-auto rounded-lg object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold text-primary mb-3">Breaking Things Down</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Problem-solving approach: breaking complex challenges into smaller, manageable parts to create clear, structured solutions.
+                    </p>
+                    <div className="bg-primary/5 rounded-lg p-4">
+                      <p className="text-sm text-muted-foreground">
+                        <strong>Strategy:</strong> Decompose large problems into hierarchical components, tackle each piece systematically, then integrate solutions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
