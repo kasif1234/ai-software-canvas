@@ -93,6 +93,28 @@ const DailyTracker = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* The Trick to Turning Thoughts into Action */}
+                <div className="bg-card rounded-lg border border-border p-6">
+                  <div className="mb-4">
+                    <img 
+                      src="/lovable-uploads/9b87f100-8fd4-4d72-ad0e-019ca216d792.png" 
+                      alt="Diagram showing positive thoughts leading to dopamine reward which drives action and motivation" 
+                      className="w-full max-w-md mx-auto rounded-lg object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold text-primary mb-3">The Trick to Turning Thoughts into Action</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Simple trick your brain uses: positive thoughts trigger dopamine, and that reward drives you to take action.
+                    </p>
+                    <div className="bg-primary/5 rounded-lg p-4">
+                      <p className="text-sm text-muted-foreground">
+                        <strong>Method:</strong> Focus on positive outcomes and benefits before starting tasks to naturally boost motivation and momentum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
