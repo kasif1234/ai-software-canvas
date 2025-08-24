@@ -128,6 +128,23 @@ const DailyTracker = () => {
               </div>
               
               <div className="space-y-4">
+                {/* 22-23/08/2025 Entry */}
+                <div className="bg-card rounded-lg border border-border p-6 hover:shadow-md transition-shadow">
+                  <div className="flex flex-col md:flex-row gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="bg-primary/10 text-primary px-4 py-2 rounded-lg font-semibold text-center min-w-[120px]">
+                        22-23/08/2025
+                      </div>
+                    </div>
+                    <div className="flex-1 space-y-3">
+                      <div className="border-l-4 border-primary/30 pl-4">
+                        <h3 className="font-semibold text-lg mb-1">QCRI Work</h3>
+                        <p className="text-muted-foreground">Enhancing the synthetic generator pipeline for the PYTHON-HCT-QA-Benchmark repository</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 {/* 22/08/2025 Entry */}
                 <div className="bg-card rounded-lg border border-border p-6 hover:shadow-md transition-shadow">
                   <div className="flex flex-col md:flex-row gap-4">
