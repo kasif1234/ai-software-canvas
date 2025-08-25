@@ -217,22 +217,13 @@ const ProjectsSection = () => {
                 </CardHeader>
                 
                 <CardContent className="space-y-6">
-                  {/* Project Diagrams */}
-                  <div className="space-y-4">
-                    <div className="w-full">
-                      <img 
-                        src="/lovable-uploads/04f30a6e-52e4-496d-9039-3455f026fab6.png" 
-                        alt="HCT-QA Pipeline Architecture"
-                        className="w-full h-auto rounded-lg border border-border"
-                      />
-                    </div>
-                    <div className="w-full">
-                      <img 
-                        src="/lovable-uploads/ff5e12c0-d30c-42d4-b72f-a93875220bc9.png" 
-                        alt="HCT-QA Table Interface"
-                        className="w-full h-auto rounded-lg border border-border"
-                      />
-                    </div>
+                  {/* Project Diagram */}
+                  <div className="w-full">
+                    <img 
+                      src="/lovable-uploads/ff5e12c0-d30c-42d4-b72f-a93875220bc9.png" 
+                      alt="HCT-QA Table Interface"
+                      className="w-full h-auto rounded-lg border border-border"
+                    />
                   </div>
 
                   {/* Project Description */}
