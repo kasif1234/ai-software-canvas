@@ -62,7 +62,7 @@ const ProjectsSection = () => {
       title: "Real-Time Classroom Monitoring Using Vision-Based AI Models",
       organization: "Edgage - Qatar Science and Technology Park (QSTP)",
       organizationLogo: "/lovable-uploads/dee2527c-6d4a-42e7-8991-395487fc7c93.png",
-      projectImage: "/lovable-uploads/1a0129b0-2c57-4105-a9e1-4543e2c9673a.png",
+      projectImage: "/lovable-uploads/dda483fd-7edb-4176-82fd-48d9cbe632cc.png",
       description: "Built three computer vision models for real-time use in smart classrooms: Student Attention Detection (identifies focused vs. distracted students using facial orientation and gaze tracking), Engagement Detection (classifies engagement levels using transfer learning with fine-tuned VGG16 on the DAiSEE dataset), and Mood Detection (detects emotional states like happy, confused, bored via facial expression recognition using FER datasets).",
       technicalDetails: "Successfully implemented the full AI pipeline, from dataset curation and training to model optimization and deployment strategy. The engagement detection model uses VGG16 architecture with transfer learning on the DAiSEE dataset. The system processes input video clips through convolutional layers, feature extraction, flattening, and dense layers for classification. Achieved cost-efficient deployment through model quantization and optimization for real-time performance in classroom environments.",
       supervisor: {
