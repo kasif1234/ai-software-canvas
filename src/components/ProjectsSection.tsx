@@ -42,6 +42,23 @@ const ProjectsSection = () => {
 
   const completedProjects = [
     {
+      title: "Contributing to HCT-QA: A Benchmark for Question Answering on Human-Centric Tables [Experiment, Analysis & Benchmark]",
+      organization: "Qatar Computing Research Institute (QCRI) - Hamad Bin Khalifa University",
+      organizationLogo: "/lovable-uploads/0c9530a6-8407-4b3e-a292-c72db84a7a58.png",
+      projectImage: "/lovable-uploads/3cd83883-be22-4d7c-869c-4c2cebb26baa.png",
+      description: "I built a Python pipeline that generates the full HCT Q&A benchmark. It takes table patterns, produces synthetic tables, converts them into HCT views, and automatically generates SQL queries with natural language questions and answers. The pipeline outputs CSV, HTML, JSON, and optional images, all controlled by configs with reproducible seeds. It's simple to run stage-by-stage or end-to-end through a CLI, and I designed it mainly for benchmarking NL-to-SQL models and analyzing table reasoning.",
+      technicalDetails: "The pipeline architecture consists of multiple stages: table pattern analysis, synthetic data generation using configurable templates, HCT view conversion with semantic layer mapping, automated SQL query generation with corresponding natural language questions, and multi-format output generation (CSV, HTML, JSON, images). The system uses reproducible random seeds for consistent benchmarking, modular CLI interface for flexible execution, and comprehensive configuration management for customizable pipeline behavior.",
+      supervisor: {
+        name: "Shahmeer Ahmad & Dr. Michaël Aupetit",
+        linkedin: "https://www.linkedin.com/in/shahmeer99/",
+        linkedin2: "https://www.linkedin.com/in/micha%C3%ABl-aupetit-1a70592/",
+        description: "Research conducted under the mentorship of Shahmeer Ahmad and Dr. Michaël Aupetit at Qatar Computing Research Institute (QCRI). Both mentors work at QCRI and provided guidance on benchmark development, natural language processing, and table reasoning methodologies."
+      },
+      paperLink: "https://www.researchgate.net/publication/391283032_HCT-QA_A_Benchmark_for_Question_Answering_on_Human-Centric_Tables",
+      videoLink: "https://www.youtube.com/watch?v=M8ph71nZ6UI&ab_channel=KasifCareer",
+      tags: ["Python", "NLP", "Benchmark Development", "SQL Generation", "Table Reasoning", "Research", "Pipeline Architecture", "CLI Tools"]
+    },
+    {
       title: "Real-Time Classroom Monitoring Using Vision-Based AI Models",
       organization: "Edgage - Qatar Science and Technology Park (QSTP)",
       organizationLogo: "/lovable-uploads/dee2527c-6d4a-42e7-8991-395487fc7c93.png",
@@ -82,7 +99,7 @@ const ProjectsSection = () => {
               onClick={() => setActiveTab('completed')}
               className="px-6"
             >
-              Completed Projects (1)
+              Completed Projects (2)
             </Button>
           </div>
         </div>
@@ -255,16 +272,51 @@ const ProjectsSection = () => {
                     <p className="text-muted-foreground text-sm leading-relaxed">
                       {project.supervisor.description}
                     </p>
-                  </div>
+                   </div>
 
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="outline">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
+                   {/* Paper Link and Video */}
+                   {((project as any).paperLink || (project as any).videoLink) && (
+                     <div className="space-y-4">
+                       <h4 className="text-lg font-semibold text-primary">Resources</h4>
+                       <div className="flex flex-wrap gap-4">
+                         {(project as any).paperLink && (
+                           <Button variant="outline" size="sm" asChild>
+                             <a 
+                               href={(project as any).paperLink} 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               className="flex items-center gap-2"
+                             >
+                               <ExternalLink className="h-4 w-4" />
+                               Research Paper
+                             </a>
+                           </Button>
+                         )}
+                         {(project as any).videoLink && (
+                           <div className="w-full">
+                             <div className="aspect-video w-full max-w-2xl">
+                               <iframe
+                                 src={`https://www.youtube.com/embed/${(project as any).videoLink.split('v=')[1]?.split('&')[0]}`}
+                                 title="Project Video"
+                                 className="w-full h-full rounded-lg"
+                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                 allowFullScreen
+                               />
+                             </div>
+                           </div>
+                         )}
+                       </div>
+                     </div>
+                   )}
+
+                   {/* Tags */}
+                   <div className="flex flex-wrap gap-2">
+                     {project.tags.map((tag, tagIndex) => (
+                       <Badge key={tagIndex} variant="outline">
+                         {tag}
+                       </Badge>
+                     ))}
+                   </div>
                 </CardContent>
               </Card>
             ))}
