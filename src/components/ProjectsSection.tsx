@@ -62,7 +62,7 @@ const ProjectsSection = () => {
       title: "Real-Time Classroom Monitoring Using Vision-Based AI Models",
       organization: "Edgage - Qatar Science and Technology Park (QSTP)",
       organizationLogo: "/lovable-uploads/dee2527c-6d4a-42e7-8991-395487fc7c93.png",
-      projectImage: "/lovable-uploads/4e8c6229-5aea-4abf-9c28-14c1e12cf9fc.png",
+      projectImage: "/lovable-uploads/f07702a1-c1fe-4d6d-9445-706707d8a129.png",
       description: "Built three computer vision models for real-time use in smart classrooms: Student Attention Detection (identifies focused vs. distracted students using facial orientation and gaze tracking), Engagement Detection (classifies engagement levels using transfer learning with fine-tuned VGG16 on the DAiSEE dataset), and Mood Detection (detects emotional states like happy, confused, bored via facial expression recognition using FER datasets).",
       technicalDetails: "Successfully implemented the full AI pipeline, from dataset curation and training to model optimization and deployment strategy. The engagement detection model uses VGG16 architecture with transfer learning on the DAiSEE dataset. The system processes input video clips through convolutional layers, feature extraction, flattening, and dense layers for classification. Achieved cost-efficient deployment through model quantization and optimization for real-time performance in classroom environments.",
       supervisor: {
@@ -217,22 +217,13 @@ const ProjectsSection = () => {
                 </CardHeader>
                 
                 <CardContent className="space-y-6">
-                  {/* Project Images */}
-                  <div className="space-y-4">
-                    <div className="w-full">
-                      <img 
-                        src="/lovable-uploads/a65d719d-1652-4cdf-bf17-f9c32bb22c11.png" 
-                        alt="HCT-QA Research Paper"
-                        className="w-full h-auto rounded-lg border border-border"
-                      />
-                    </div>
-                    <div className="w-full">
-                      <img 
-                        src="/lovable-uploads/ff5e12c0-d30c-42d4-b72f-a93875220bc9.png" 
-                        alt="HCT-QA Table Interface"
-                        className="w-full h-auto rounded-lg border border-border"
-                      />
-                    </div>
+                  {/* Project Diagram */}
+                  <div className="w-full">
+                    <img 
+                      src={project.projectImage} 
+                      alt="Project Architecture Diagram"
+                      className="w-full h-auto rounded-lg border border-border"
+                    />
                   </div>
 
                   {/* Project Description */}
