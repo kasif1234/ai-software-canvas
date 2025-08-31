@@ -37,6 +37,20 @@ const ProjectsSection = () => {
         description: "Research conducted under the mentorship of Dr. Michaël Aupetit at Qatar Computing Research Institute (QCRI) and Shahmeer Ahmad. The project focuses on advancing natural language to SQL translation capabilities through innovative pipeline design and comprehensive evaluation methodologies."
       },
       tags: ["NLP", "Text2SQL", "GPT-4", "Pipeline Development", "Research", "LLM", "Data Generation", "SQL"]
+    },
+    {
+      title: "Swarm Drone Coordination System - Senior Development Project",
+      organization: "Qatar University",
+      organizationLogo: "/lovable-uploads/bc83b7d9-83e2-4a2f-9b6a-91a46d1360e6.png",
+      projectImage: "/lovable-uploads/2bbc8b9d-6e62-4a17-9cdd-4e22549cecdf.png",
+      description: "As part of our Senior Development Project at Qatar University, we are developing a system that enables multiple drones to coordinate in real time through a shared communication network. Using reinforcement learning, the drones autonomously avoid obstacles while staying connected as a swarm. Onboard computer vision models further allow the drones to detect and identify objects of interest in complex environments. By combining autonomous navigation, obstacle avoidance, and collaborative search, this system demonstrates strong potential for applications in surveillance, search-and-rescue, and environmental monitoring.",
+      technicalDetails: "The system architecture integrates reinforcement learning algorithms for autonomous navigation and obstacle avoidance, real-time communication protocols for swarm coordination, computer vision models for object detection and identification, and distributed control systems for maintaining swarm connectivity. The drones utilize shared sensor data and collaborative decision-making algorithms to optimize search patterns and maintain formation while adapting to dynamic environmental conditions.",
+      supervisor: {
+        name: "Amr Mohamed",
+        linkedin: "https://www.linkedin.com/in/amr-mohamed/",
+        description: "Senior Development Project supervised by Amr Mohamed at Qatar University. The project focuses on advanced robotics, swarm intelligence, and autonomous systems with applications in surveillance, search-and-rescue operations, and environmental monitoring."
+      },
+      tags: ["Reinforcement Learning", "Swarm Intelligence", "Computer Vision", "Autonomous Navigation", "Robotics", "Object Detection", "Real-time Systems"]
     }
   ];
 
@@ -92,7 +106,7 @@ const ProjectsSection = () => {
               onClick={() => setActiveTab('inProgress')}
               className="px-6"
             >
-              Projects in Progress (2)
+              Projects in Progress (3)
             </Button>
             <Button
               variant={activeTab === 'completed' ? "default" : "outline"}
