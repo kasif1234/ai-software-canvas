@@ -76,15 +76,15 @@ const ProjectsSection = () => {
       title: "Real-Time Classroom Monitoring Using Vision-Based AI Models",
       organization: "Edgage - Qatar Science and Technology Park (QSTP)",
       organizationLogo: "/lovable-uploads/dee2527c-6d4a-42e7-8991-395487fc7c93.png",
-      projectImage: "/lovable-uploads/f07702a1-c1fe-4d6d-9445-706707d8a129.png",
-      description: "Built three computer vision models for real-time use in smart classrooms: Student Attention Detection (identifies focused vs. distracted students using facial orientation and gaze tracking), Engagement Detection (classifies engagement levels using transfer learning with fine-tuned VGG16 on the DAiSEE dataset), and Mood Detection (detects emotional states like happy, confused, bored via facial expression recognition using FER datasets).",
+      projectImage: "/lovable-uploads/e20d3d6c-84d9-4f30-9656-777647b7e511.png",
+      description: "Built three computer vision models for real-time use in smart classrooms: Student Attention Detection (identifies focused vs. distracted students using facial orientation and gaze tracking), Engagement Detection (classifies engagement levels using transfer learning with fine-tuned VGG16 on the DAiSEE dataset), and Mood Detection (detects emotional states like happy, confused, bored via facial expression recognition using FER datasets). These models are being integrated with LiveKit to enable real-time video streaming and analytics in interactive classroom environments.",
       technicalDetails: "Successfully implemented the full AI pipeline, from dataset curation and training to model optimization and deployment strategy. The engagement detection model uses VGG16 architecture with transfer learning on the DAiSEE dataset. The system processes input video clips through convolutional layers, feature extraction, flattening, and dense layers for classification. Achieved cost-efficient deployment through model quantization and optimization for real-time performance in classroom environments.",
       supervisor: {
         name: "Qatar Science & Technology Park (QSTP)",
         linkedin: "https://www.linkedin.com/company/qatar-science-&-technology-park/posts/?feedView=all",
         description: "Completed work as an AI/ML developer at Edgage, a startup based at Qatar Science and Technology Park. The project was supervised by QSTP, successfully bridging AI research and real-world deployment to empower educators with advanced computer vision technology."
       },
-      tags: ["Computer Vision", "TensorFlow", "VGG16", "CNNs", "DAiSEE", "FER2013", "OpenCV", "Model Optimization", "Real-time AI"]
+      tags: ["Computer Vision", "TensorFlow", "VGG16", "CNNs", "DAiSEE", "FER2013", "OpenCV", "Model Optimization", "Real-time AI", "LiveKit"]
     }
   ];
 
