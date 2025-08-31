@@ -65,7 +65,7 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
               onClick={() => handleNavigation('/daily-tracker')}
               className="hover:text-primary transition-colors"
             >
-              Daily Tracker
+              Monthly Tracker
             </button>
             <button 
               onClick={() => scrollToSection('skills')}
@@ -150,7 +150,7 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
               onClick={() => handleNavigation('/daily-tracker')}
               className="block px-3 py-2 text-base font-medium hover:text-primary transition-colors"
             >
-              Daily Tracker
+              Monthly Tracker
             </button>
             <button
               onClick={() => handleNavigation('/internships')}

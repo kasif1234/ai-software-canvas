@@ -126,6 +126,34 @@ const DailyTracker = () => {
                   Track your monthly progress and activities
                 </p>
               </div>
+              
+              <div className="space-y-6">
+                {/* June */}
+                <div className="bg-card rounded-lg border border-border p-6">
+                  <h3 className="text-2xl font-semibold text-primary mb-3">June</h3>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>• Joined HBKU-QCRI Internship for Generative AI Research Work</li>
+                    <li>• Completed Huawei HCAI Certification</li>
+                  </ul>
+                </div>
+
+                {/* July */}
+                <div className="bg-card rounded-lg border border-border p-6">
+                  <h3 className="text-2xl font-semibold text-primary mb-3">July</h3>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>• Joined Hamad Medical Corporation Internship for Surgical Segmentation Work</li>
+                    <li>• Joined QSTP Internship as AI/ML Developer</li>
+                  </ul>
+                </div>
+
+                {/* August */}
+                <div className="bg-card rounded-lg border border-border p-6">
+                  <h3 className="text-2xl font-semibold text-primary mb-3">August</h3>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>• Applied to Avey.ai, got rejected, and was told to study MIT: Introduction to Algorithms and Deep Learning Coursera by Andrew.ng</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
