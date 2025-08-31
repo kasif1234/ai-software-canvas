@@ -73,7 +73,7 @@ const ProjectsSection = () => {
       tags: ["Python", "NLP", "Benchmark Development", "SQL Generation", "Table Reasoning", "Research", "Pipeline Architecture", "CLI Tools"]
     },
     {
-      title: "Real-Time Classroom Monitoring Using Vision-Based AI Models",
+      title: "LiveKit-Powered Real-Time Classroom Monitoring with Vision-Based AI",
       organization: "Edgage - Qatar Science and Technology Park (QSTP)",
       organizationLogo: "/lovable-uploads/dee2527c-6d4a-42e7-8991-395487fc7c93.png",
       projectImage: "/lovable-uploads/e20d3d6c-84d9-4f30-9656-777647b7e511.png",
