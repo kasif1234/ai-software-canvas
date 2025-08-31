@@ -118,108 +118,13 @@ const DailyTracker = () => {
               </div>
             </div>
 
-            {/* Daily Tracker Section */}
+            {/* Monthly Tracker Section */}
             <div>
               <div className="mb-8">
-                <h1 className="text-4xl font-bold text-primary mb-4">Daily Tracker</h1>
+                <h1 className="text-4xl font-bold text-primary mb-4">Monthly Tracker</h1>
                 <p className="text-lg text-muted-foreground">
-                  Track your daily progress and activities
+                  Track your monthly progress and activities
                 </p>
-              </div>
-              
-              <div className="space-y-4">
-                {/* 22-23/08/2025 Entry */}
-                <div className="bg-card rounded-lg border border-border p-6 hover:shadow-md transition-shadow">
-                  <div className="flex flex-col md:flex-row gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="bg-primary/10 text-primary px-4 py-2 rounded-lg font-semibold text-center min-w-[120px]">
-                        22-23/08/2025
-                      </div>
-                    </div>
-                    <div className="flex-1 space-y-3">
-                      <div className="border-l-4 border-primary/30 pl-4">
-                        <h3 className="font-semibold text-lg mb-1">QCRI Work</h3>
-                        <p className="text-muted-foreground">Enhancing the synthetic generator pipeline for the PYTHON-HCT-QA-Benchmark repository</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* 22/08/2025 Entry */}
-                <div className="bg-card rounded-lg border border-border p-6 hover:shadow-md transition-shadow">
-                  <div className="flex flex-col md:flex-row gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="bg-primary/10 text-primary px-4 py-2 rounded-lg font-semibold text-center min-w-[120px]">
-                        22/08/2025
-                      </div>
-                    </div>
-                    <div className="flex-1 space-y-3">
-                      <div className="border-l-4 border-primary/30 pl-4">
-                        <h3 className="font-semibold text-lg mb-1">QCRI Work</h3>
-                        <p className="text-muted-foreground">Building a scalable repository for the PYTHON-HCT-QA-Benchmark project, Synthetic Generator Pipeline</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* 21/08/2025 Entry */}
-                <div className="bg-card rounded-lg border border-border p-6 hover:shadow-md transition-shadow">
-                  <div className="flex flex-col md:flex-row gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="bg-primary/10 text-primary px-4 py-2 rounded-lg font-semibold text-center min-w-[120px]">
-                        21/08/2025
-                      </div>
-                    </div>
-                    <div className="flex-1 space-y-3">
-                      <div className="border-l-4 border-primary/30 pl-4">
-                        <h3 className="font-semibold text-lg mb-1">QSTP Work</h3>
-                        <p className="text-muted-foreground">Using Livekit to build WebRTC system</p>
-                      </div>
-                      <div className="border-l-4 border-secondary/50 pl-4">
-                        <h3 className="font-semibold text-lg mb-1">QCRI Work</h3>
-                        <p className="text-muted-foreground">Made output logic for (Phase 2) Text2SQL project and documented generator pipeline from (Phase 1) PYTHON-HCT-QA-Benchmark project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* 20/08/2025 Entry */}
-                <div className="bg-card rounded-lg border border-border p-6 hover:shadow-md transition-shadow">
-                  <div className="flex flex-col md:flex-row gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="bg-primary/10 text-primary px-4 py-2 rounded-lg font-semibold text-center min-w-[120px]">
-                        20/08/2025
-                      </div>
-                    </div>
-                    <div className="flex-1 space-y-3">
-                      <div className="border-l-4 border-primary/30 pl-4">
-                        <h3 className="font-semibold text-lg mb-1">MIT Algorithms</h3>
-                        <p className="text-muted-foreground">Studied binary trees</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* 19/08/2025 Entry */}
-                <div className="bg-card rounded-lg border border-border p-6 hover:shadow-md transition-shadow">
-                  <div className="flex flex-col md:flex-row gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="bg-primary/10 text-primary px-4 py-2 rounded-lg font-semibold text-center min-w-[120px]">
-                        19/08/2025
-                      </div>
-                    </div>
-                    <div className="flex-1 space-y-3">
-                      <div className="border-l-4 border-primary/30 pl-4">
-                        <h3 className="font-semibold text-lg mb-1">QSTP Work</h3>
-                        <p className="text-muted-foreground">Set up Docker for PostgreSQL and FastAPI backend in Python</p>
-                      </div>
-                      <div className="border-l-4 border-secondary/50 pl-4">
-                        <h3 className="font-semibold text-lg mb-1">MIT Algorithms</h3>
-                        <p className="text-muted-foreground">Studied Linear Sorting vs. Comparison-Based Sorting</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
