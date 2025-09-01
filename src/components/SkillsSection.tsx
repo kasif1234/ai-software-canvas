@@ -79,33 +79,6 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        {/* Skill Level Indicators */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold mb-8">Proficiency Levels</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🚀</span>
-              </div>
-              <h4 className="font-semibold text-green-400 mb-2">Expert</h4>
-              <p className="text-sm text-muted-foreground">Python, Java, AI/ML, System Design</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">⚡</span>
-              </div>
-              <h4 className="font-semibold text-blue-400 mb-2">Advanced</h4>
-              <p className="text-sm text-muted-foreground">C++, Cloud Platforms, IoT Development</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📈</span>
-              </div>
-              <h4 className="font-semibold text-yellow-400 mb-2">Growing</h4>
-              <p className="text-sm text-muted-foreground">DevOps, Mobile Development, Blockchain</p>
-            </div>
-          </div>
-        </div>
 
         {/* Specialist at Section */}
         <div className="mt-16 text-center">
