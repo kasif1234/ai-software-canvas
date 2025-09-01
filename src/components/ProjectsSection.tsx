@@ -84,6 +84,7 @@ const ProjectsSection = () => {
         linkedin: "https://www.linkedin.com/company/qatar-science-&-technology-park/posts/?feedView=all",
         description: "Completed work as an AI/ML developer at Edgage, a startup based at Qatar Science and Technology Park. The project was supervised by QSTP, successfully bridging AI research and real-world deployment to empower educators with advanced computer vision technology."
       },
+      videoLink: "https://www.youtube.com/watch?v=1gYIlF3of7Y&ab_channel=KasifCareer",
       tags: ["Computer Vision", "TensorFlow", "VGG16", "CNNs", "DAiSEE", "FER2013", "OpenCV", "Model Optimization", "Real-time AI", "LiveKit"]
     }
   ];
