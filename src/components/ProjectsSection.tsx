@@ -117,6 +117,21 @@ const ProjectsSection = () => {
       videoLink: "https://www.youtube.com/watch?v=Ojc-MKK3vH0",
       githubLink: "https://github.com/kasif1234/IoT-Mesh-Networking---Disaster-Communication-System",
       tags: ["ESP32", "LoRa", "Mesh Networking", "IoT", "Disaster Communication", "Emergency Response", "Wireless Communication", "Low Power Design"]
+    },
+    {
+      title: "Wasila – Arabic-First AI Career Agent (Fanar Hackathon Finalist)",
+      organization: "Qatar Computing Research Institute (QCRI) - Hamad Bin Khalifa University",
+      organizationLogo: "/lovable-uploads/59bb0f17-fb71-42ec-9417-008bfd28748b.png",
+      projectImage: "/lovable-uploads/a1ea8f79-7d88-4942-826f-8c8107b1d860.png",
+      description: "Wasila – Arabic-First AI Career Agent (Fanar Hackathon Finalist) is an innovative platform tailored to support Arabic speakers in exploring and advancing their careers through intuitive, culturally aware AI interaction. Leveraging the FanarTea codebase—a modular, Python-based web application with frontend and backend architecture—Wasila is built to be scalable, maintainable, and easily enhanced. Together, they represent a smart, adaptive solution bridging conversational AI design with real-world career development needs in the Arabic-speaking world.",
+      technicalDetails: "Built on the FanarTea codebase, Wasila utilizes a modular Python-based web application architecture with separate frontend and backend components. The system integrates conversational AI capabilities specifically designed for Arabic language processing, cultural context awareness, and career guidance. The platform features scalable architecture for easy enhancement and maintenance, adaptive AI responses tailored to Arabic speakers' career development needs, and comprehensive backend services supporting real-time career guidance interactions.",
+      supervisor: {
+        name: "Fanar Hackathon - Qatar Computing Research Institute",
+        linkedin: "https://www.linkedin.com/company/qatar-computing-research-institute/",
+        description: "Developed as a finalist project for the Fanar Hackathon, focusing on Arabic-first AI solutions for career development. The project demonstrates innovation in culturally aware AI design and natural language processing for Arabic speakers."
+      },
+      githubLink: "https://github.com/MoAlthaf/FanarTea",
+      tags: ["Arabic NLP", "Career AI", "Conversational AI", "Python", "Web Application", "Cultural AI", "Hackathon", "Backend Architecture"]
     }
   ];
 
@@ -145,7 +160,7 @@ const ProjectsSection = () => {
               onClick={() => setActiveTab('completed')}
               className="px-6"
             >
-              Completed Projects (4)
+              Completed Projects (5)
             </Button>
           </div>
         </div>
