@@ -106,7 +106,7 @@ const ProjectsSection = () => {
       title: "Offline Disaster Communication Using ESP32 & LoRa",
       organization: "Qatar University",
       organizationLogo: "/lovable-uploads/ba0837ff-e774-47c6-a605-1c9662e54ac9.png",
-      projectImage: "/lovable-uploads/dfa608ef-cc52-4ea9-ad0f-dc9ff979c31c.png",
+      projectImage: "/lovable-uploads/e46ba8b8-6a71-434a-878e-10b89047df3f.png",
       description: "This project establishes a resilient, infrastructure-independent communication system tailored for disaster response scenarios. Powered by ESP32 microcontrollers and LoRa radio modules, it enables mesh-style message relay—allowing emergency messages to hop between nodes, extending communication reach even when standard networks are down. The design emphasizes robustness, portability, and low power consumption, making it ideal for deployment in areas affected by natural hazards.",
       technicalDetails: "The system utilizes ESP32 microcontrollers paired with LoRa radio modules to create a mesh networking architecture. Messages can hop between nodes to extend communication range beyond traditional limitations. The design prioritizes low power consumption for extended operation during emergencies, with robust hardware suitable for harsh environmental conditions. The mesh topology ensures redundancy and fault tolerance in critical communication scenarios.",
       supervisor: {
