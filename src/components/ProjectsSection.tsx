@@ -86,6 +86,21 @@ const ProjectsSection = () => {
       },
       videoLink: "https://www.youtube.com/watch?v=1gYIlF3of7Y&ab_channel=KasifCareer",
       tags: ["Computer Vision", "TensorFlow", "VGG16", "CNNs", "DAiSEE", "FER2013", "OpenCV", "Model Optimization", "Real-time AI", "LiveKit"]
+    },
+    {
+      title: "Modular Robotic Car with Servo Motor Control and Circuit Prototyping via Fritzing",
+      organization: "Qatar University",
+      organizationLogo: "/lovable-uploads/5727015a-665b-4873-abc8-1eb5cef4c229.png",
+      projectImage: "/lovable-uploads/75883f7a-550e-4ec0-b9a1-2a004f0e1540.png",
+      description: "The Modular Robotic Car with Servo Motor Control and Circuit Prototyping via Fritzing is a compact project that demonstrates the integration of mechanical design, electronics, and control systems. Built as a modular platform, the car allows easy customization and component swapping. A servo motor provides precise steering control, enabling accurate directional movement. The electronic circuitry is designed and visualized using Fritzing, making prototyping simple and beginner-friendly. This project serves as a hands-on introduction to robotics, circuit design, and embedded systems for students and hobbyists.",
+      technicalDetails: "The robotic car features a modular design architecture with interchangeable components for easy customization. The servo motor control system provides precise steering with accurate directional movement capabilities. Circuit design and prototyping are handled through Fritzing software for visualization and component layout planning. The embedded control system integrates mechanical design with electronic components, creating a comprehensive learning platform for robotics fundamentals.",
+      supervisor: {
+        name: "Qatar University Engineering Department",
+        linkedin: "https://www.linkedin.com/school/qatar-university/",
+        description: "Project completed as part of the engineering curriculum at Qatar University. This hands-on robotics project demonstrates practical application of mechanical design, electronics, and control systems integration for educational purposes."
+      },
+      videoLink: "https://www.youtube.com/watch?v=dxPsMxUo0dc",
+      tags: ["Robotics", "Servo Motors", "Circuit Design", "Fritzing", "Embedded Systems", "Mechanical Design", "Electronics", "Prototyping"]
     }
   ];
 
@@ -114,7 +129,7 @@ const ProjectsSection = () => {
               onClick={() => setActiveTab('completed')}
               className="px-6"
             >
-              Completed Projects (2)
+              Completed Projects (3)
             </Button>
           </div>
         </div>
