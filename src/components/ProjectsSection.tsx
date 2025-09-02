@@ -101,6 +101,22 @@ const ProjectsSection = () => {
       },
       videoLink: "https://www.youtube.com/watch?v=dxPsMxUo0dc",
       tags: ["Robotics", "Servo Motors", "Circuit Design", "Fritzing", "Embedded Systems", "Mechanical Design", "Electronics", "Prototyping"]
+    },
+    {
+      title: "Offline Disaster Communication Using ESP32 & LoRa",
+      organization: "Qatar University",
+      organizationLogo: "/lovable-uploads/ba0837ff-e774-47c6-a605-1c9662e54ac9.png",
+      projectImage: "/lovable-uploads/dfa608ef-cc52-4ea9-ad0f-dc9ff979c31c.png",
+      description: "This project establishes a resilient, infrastructure-independent communication system tailored for disaster response scenarios. Powered by ESP32 microcontrollers and LoRa radio modules, it enables mesh-style message relay—allowing emergency messages to hop between nodes, extending communication reach even when standard networks are down. The design emphasizes robustness, portability, and low power consumption, making it ideal for deployment in areas affected by natural hazards.",
+      technicalDetails: "The system utilizes ESP32 microcontrollers paired with LoRa radio modules to create a mesh networking architecture. Messages can hop between nodes to extend communication range beyond traditional limitations. The design prioritizes low power consumption for extended operation during emergencies, with robust hardware suitable for harsh environmental conditions. The mesh topology ensures redundancy and fault tolerance in critical communication scenarios.",
+      supervisor: {
+        name: "Qatar University Engineering Department",
+        linkedin: "https://www.linkedin.com/school/qatar-university/",
+        description: "IoT and mesh networking project developed at Qatar University focusing on disaster-resilient communication systems. The project demonstrates practical application of wireless communication protocols for emergency response scenarios."
+      },
+      videoLink: "https://www.youtube.com/watch?v=Ojc-MKK3vH0",
+      githubLink: "https://github.com/kasif1234/IoT-Mesh-Networking---Disaster-Communication-System",
+      tags: ["ESP32", "LoRa", "Mesh Networking", "IoT", "Disaster Communication", "Emergency Response", "Wireless Communication", "Low Power Design"]
     }
   ];
 
@@ -129,7 +145,7 @@ const ProjectsSection = () => {
               onClick={() => setActiveTab('completed')}
               className="px-6"
             >
-              Completed Projects (3)
+              Completed Projects (4)
             </Button>
           </div>
         </div>
