@@ -132,6 +132,21 @@ const ProjectsSection = () => {
       },
       githubLink: "https://github.com/MoAlthaf/FanarTea",
       tags: ["Arabic NLP", "Career AI", "Conversational AI", "Python", "Web Application", "Cultural AI", "Hackathon", "Backend Architecture"]
+    },
+    {
+      title: "Lettuce Nutrition Classification",
+      organization: "Qatar University",
+      organizationLogo: "/lovable-uploads/da8216a7-1bbb-4ca4-9ef9-692c558118d3.png",
+      projectImage: "/lovable-uploads/a7a6401a-59e1-4a3f-8789-f328191b1e9c.png",
+      description: "This project was conducted under the Computer Vision course at Qatar University. The work focused on using segmentation and classification techniques to assess the health of lettuce plants grown in hydroponic systems. By comparing deep learning and non-deep learning methods, the study showed that applying segmentation before classification improved accuracy significantly. U-Net was selected as the best-performing segmentation model, while classification was done using methods such as YOLOv8-CLS and SIFT. The results demonstrated that integrating segmentation helps isolate relevant features and enhances model performance, highlighting the potential of computer vision for agricultural automation.",
+      technicalDetails: "The project implements a comprehensive computer vision pipeline for agricultural health assessment. U-Net architecture was employed for semantic segmentation to isolate lettuce plants from background noise, followed by classification using YOLOv8-CLS for deep learning approach and SIFT for traditional computer vision methods. The comparative analysis revealed that preprocessing with segmentation significantly improved classification accuracy by focusing on relevant plant features and reducing environmental interference.",
+      supervisor: {
+        name: "Prof. Somaya Al-maadeed",
+        linkedin: "https://www.linkedin.com/in/prof-somaya-al-maadeed-988a145a/",
+        description: "This research was considered for submission under the supervision of Dr. Somaya Al-Maadeed to the special session 'Advances in Computational Medical Imaging – From Deep Learning to Generative AI' at IEEE IPTA 2025 (Istanbul, Türkiye)."
+      },
+      paperLink: "https://drive.google.com/drive/folders/19C8q4b0w2EH6IWZHkQ_OOhlpPPPIkGhE?usp=sharing",
+      tags: ["Computer Vision", "U-Net", "Segmentation", "YOLOv8", "SIFT", "Agricultural AI", "Deep Learning", "Hydroponic Systems", "Plant Health"]
     }
   ];
 
@@ -160,7 +175,7 @@ const ProjectsSection = () => {
               onClick={() => setActiveTab('completed')}
               className="px-6"
             >
-              Completed Projects (5)
+              Completed Projects (6)
             </Button>
           </div>
         </div>
