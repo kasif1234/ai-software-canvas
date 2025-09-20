@@ -86,34 +86,51 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="flex justify-center">
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <div className="group cursor-pointer transform transition-all duration-500 hover:scale-110 hover:-translate-y-2">
-                    <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 w-64 h-40 flex items-center justify-center">
-                      <img 
-                        src="/lovable-uploads/630f9ff6-9bd0-42f3-b43c-320208600135.png" 
-                        alt="Fiverr"
-                        className="max-w-full max-h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
-                      />
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* YouTube Video */}
+            <div className="aspect-video bg-black/5 rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/OYRCyowNDzw"
+                title="Freelance Work Showcase"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
+
+            {/* Fiverr Logo with Tooltip */}
+            <div className="flex justify-center">
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div className="group cursor-pointer transform transition-all duration-500 hover:scale-110 hover:-translate-y-2">
+                      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 w-64 h-40 flex items-center justify-center">
+                        <img 
+                          src="/lovable-uploads/630f9ff6-9bd0-42f3-b43c-320208600135.png" 
+                          alt="Fiverr"
+                          className="max-w-full max-h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                        />
+                      </div>
                     </div>
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent className="max-w-md p-4">
-                  <div className="space-y-2">
-                    <p className="font-semibold">Global Freelance Success</p>
-                    <ul className="text-sm space-y-1 text-left">
-                      <li>• Delivered over 10,000 QAR worth of customized software and automation solutions</li>
-                      <li>• Served clients across education, healthcare, and e-commerce sectors</li>
-                      <li>• Designed tools using Python, Java, C++, R, and Excel VBA</li>
-                      <li>• Implemented AI agents and low-code automation platforms</li>
-                      <li>• Maintained strong client satisfaction and repeat contracts</li>
-                    </ul>
-                  </div>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+                  </TooltipTrigger>
+                  <TooltipContent className="max-w-md p-4">
+                    <div className="space-y-2">
+                      <p className="font-semibold">Global Freelance Success</p>
+                      <ul className="text-sm space-y-1 text-left">
+                        <li>• Delivered over 10,000 QAR worth of customized software and automation solutions</li>
+                        <li>• Served clients across education, healthcare, and e-commerce sectors</li>
+                        <li>• Designed tools using Python, Java, C++, R, and Excel VBA</li>
+                        <li>• Implemented AI agents and low-code automation platforms</li>
+                        <li>• Maintained strong client satisfaction and repeat contracts</li>
+                      </ul>
+                    </div>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </div>
           </div>
         </div>
       </div>
