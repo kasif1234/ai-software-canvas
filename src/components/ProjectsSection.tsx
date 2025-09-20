@@ -59,7 +59,7 @@ const ProjectsSection = () => {
       title: "Contributing to HCT-QA: A Benchmark for Question Answering on Human-Centric Tables [Experiment, Analysis & Benchmark]",
       organization: "Qatar Computing Research Institute (QCRI) - Hamad Bin Khalifa University",
       organizationLogo: "/lovable-uploads/0c9530a6-8407-4b3e-a292-c72db84a7a58.png",
-      projectImage: "/lovable-uploads/5ba8fb72-0e1d-4939-aa39-2a6c5d91fa3b.png",
+      projectImage: "/lovable-uploads/qcri-hct-poster.png",
       description: "I built a Python pipeline that generates the full HCT Q&A benchmark. It takes table patterns, produces synthetic tables, converts them into HCT views, and automatically generates SQL queries with natural language questions and answers. The pipeline outputs CSV, HTML, JSON, and optional images, all controlled by configs with reproducible seeds. It's simple to run stage-by-stage or end-to-end through a CLI, and I designed it mainly for benchmarking NL-to-SQL models and analyzing table reasoning.",
       technicalDetails: "The pipeline architecture consists of multiple stages: table pattern analysis, synthetic data generation using configurable templates, HCT view conversion with semantic layer mapping, automated SQL query generation with corresponding natural language questions, and multi-format output generation (CSV, HTML, JSON, images). The system uses reproducible random seeds for consistent benchmarking, modular CLI interface for flexible execution, and comprehensive configuration management for customizable pipeline behavior.",
       supervisor: {
