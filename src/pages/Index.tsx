@@ -9,7 +9,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ExperienceHighlightsSection from "@/components/ExperienceHighlightsSection";
 import CompanyLogosSection from "@/components/CompanyLogosSection";
-import CurrentlyReading from "@/components/CurrentlyReading";
+import FavoriteInstitutes from "@/components/FavoriteInstitutes";
 import SkillsSection from "@/components/SkillsSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import ContactSection from "@/components/ContactSection";
@@ -33,7 +33,7 @@ const Index = () => {
       <CompanyLogosSection />
       <AboutSection />
       <ExperienceHighlightsSection />
-      <CurrentlyReading />
+      <FavoriteInstitutes />
       <SkillsSection />
       <CertificationsSection />
       <ContactSection />
