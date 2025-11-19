@@ -75,6 +75,36 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* LinkedIn Section */}
+        <div className="mb-16 bg-gradient-to-br from-blue-500/10 to-blue-600/10 rounded-3xl p-8 md:p-12">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              LinkedIn - <span className="gradient-text">Let's Connect</span>
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Follow my professional journey and connect with me on LinkedIn
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <a 
+              href="https://www.linkedin.com/in/mohammad-kashif-145456345/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block max-w-2xl w-full transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/linkedin-post.png" 
+                  alt="LinkedIn Post - Top 3 at Investment AI Agent Hackathon"
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-600/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         {/* Freelance Work Section */}
         <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-8 md:p-12">
           <div className="text-center mb-8">
