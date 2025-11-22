@@ -105,6 +105,99 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* My Latest Work Section */}
+        <div className="mb-16 bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-8 md:p-12 overflow-hidden">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              My <span className="gradient-text">Latest Work</span>
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Showcasing my recent projects and achievements
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="overflow-hidden">
+              <div className="flex gap-8 animate-scroll">
+                {/* Arduino Project */}
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/arduino-project.jpg" 
+                        alt="Arduino Project"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">Arduino Project</h4>
+                      <p className="text-muted-foreground">IoT and embedded systems development</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Senior Design Project */}
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <a 
+                    href="/lovable-uploads/senior-design-poster.pdf" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  >
+                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
+                      <div className="text-center">
+                        <div className="text-6xl mb-4">📄</div>
+                        <p className="text-sm text-muted-foreground">Click to view full poster</p>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">Senior Design Project</h4>
+                      <p className="text-muted-foreground">STARS: Smart Target search using Autonomous Reconnaissance Swarms</p>
+                    </div>
+                  </a>
+                </div>
+
+                {/* Duplicate items for seamless loop */}
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/arduino-project.jpg" 
+                        alt="Arduino Project"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">Arduino Project</h4>
+                      <p className="text-muted-foreground">IoT and embedded systems development</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <a 
+                    href="/lovable-uploads/senior-design-poster.pdf" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  >
+                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
+                      <div className="text-center">
+                        <div className="text-6xl mb-4">📄</div>
+                        <p className="text-sm text-muted-foreground">Click to view full poster</p>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">Senior Design Project</h4>
+                      <p className="text-muted-foreground">STARS: Smart Target search using Autonomous Reconnaissance Swarms</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Freelance Work Section */}
         <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-8 md:p-12">
           <div className="text-center mb-8">
