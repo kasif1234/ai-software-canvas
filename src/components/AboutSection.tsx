@@ -144,11 +144,12 @@ const AboutSection = () => {
                     rel="noopener noreferrer"
                     className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   >
-                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
-                      <div className="text-center">
-                        <div className="text-6xl mb-4">📄</div>
-                        <p className="text-sm text-muted-foreground">Click to view full poster</p>
-                      </div>
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/senior-design-poster-preview.jpg" 
+                        alt="Senior Design Project Poster"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div className="p-6">
                       <h4 className="text-xl font-bold mb-2">Senior Design Project</h4>
@@ -181,11 +182,12 @@ const AboutSection = () => {
                     rel="noopener noreferrer"
                     className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   >
-                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
-                      <div className="text-center">
-                        <div className="text-6xl mb-4">📄</div>
-                        <p className="text-sm text-muted-foreground">Click to view full poster</p>
-                      </div>
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/senior-design-poster-preview.jpg" 
+                        alt="Senior Design Project Poster"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div className="p-6">
                       <h4 className="text-xl font-bold mb-2">Senior Design Project</h4>
