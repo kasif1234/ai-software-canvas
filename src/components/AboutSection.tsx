@@ -200,6 +200,241 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* Certifications Section */}
+        <div className="mb-16 bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-8 md:p-12 overflow-hidden">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              Professional <span className="gradient-text">Certifications</span>
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Continuous learning and professional development achievements
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="overflow-hidden">
+              <div className="flex gap-8 animate-scroll">
+                {/* AIX Hackathon */}
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/aix-hackathon.png" 
+                        alt="AIX Hackathon Certificate"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">AIX Hackathon</h4>
+                      <p className="text-muted-foreground">Certificate of Appreciation</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* CMUQ Lifelines Hackathon */}
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/cmuq-lifelines-hackathon.jpg" 
+                        alt="CMUQ Lifelines Hackathon Certificate"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">CMUQ Lifelines Hackathon</h4>
+                      <p className="text-muted-foreground">Certificate of Achievement</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Huawei AI Certificate */}
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/huawei-ai-certificate.png" 
+                        alt="Huawei HCIA-AI Certificate"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">HCIA-AI V3.5 Course</h4>
+                      <p className="text-muted-foreground">Huawei Talent Online</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* QCRI Internship */}
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/qcri-internship-completion.jpg" 
+                        alt="QCRI Summer Internship Certificate"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">QCRI Summer Internship</h4>
+                      <p className="text-muted-foreground">Research Institute Certificate</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Deep Learning Specialization */}
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <a 
+                    href="/lovable-uploads/deep-learning-5-courses.pdf" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  >
+                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
+                      <div className="text-center">
+                        <div className="text-6xl mb-4">🎓</div>
+                        <h4 className="text-xl font-bold mb-2">Deep Learning Specialization</h4>
+                        <p className="text-sm text-muted-foreground">5 Courses Completed</p>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">Coursera Specialization</h4>
+                      <p className="text-muted-foreground">Deep Learning by Andrew Ng</p>
+                    </div>
+                  </a>
+                </div>
+
+                {/* Neural Networks Certificate */}
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <a 
+                    href="/lovable-uploads/neural-networks-deep-learning.pdf" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  >
+                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
+                      <div className="text-center">
+                        <div className="text-6xl mb-4">🧠</div>
+                        <h4 className="text-xl font-bold mb-2">Neural Networks & Deep Learning</h4>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">Coursera Course</h4>
+                      <p className="text-muted-foreground">Foundation of Deep Learning</p>
+                    </div>
+                  </a>
+                </div>
+
+                {/* Duplicate items for seamless loop */}
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/aix-hackathon.png" 
+                        alt="AIX Hackathon Certificate"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">AIX Hackathon</h4>
+                      <p className="text-muted-foreground">Certificate of Appreciation</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/cmuq-lifelines-hackathon.jpg" 
+                        alt="CMUQ Lifelines Hackathon Certificate"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">CMUQ Lifelines Hackathon</h4>
+                      <p className="text-muted-foreground">Certificate of Achievement</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/huawei-ai-certificate.png" 
+                        alt="Huawei HCIA-AI Certificate"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">HCIA-AI V3.5 Course</h4>
+                      <p className="text-muted-foreground">Huawei Talent Online</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/qcri-internship-completion.jpg" 
+                        alt="QCRI Summer Internship Certificate"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">QCRI Summer Internship</h4>
+                      <p className="text-muted-foreground">Research Institute Certificate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <a 
+                    href="/lovable-uploads/deep-learning-5-courses.pdf" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  >
+                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
+                      <div className="text-center">
+                        <div className="text-6xl mb-4">🎓</div>
+                        <h4 className="text-xl font-bold mb-2">Deep Learning Specialization</h4>
+                        <p className="text-sm text-muted-foreground">5 Courses Completed</p>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">Coursera Specialization</h4>
+                      <p className="text-muted-foreground">Deep Learning by Andrew Ng</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <a 
+                    href="/lovable-uploads/neural-networks-deep-learning.pdf" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  >
+                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
+                      <div className="text-center">
+                        <div className="text-6xl mb-4">🧠</div>
+                        <h4 className="text-xl font-bold mb-2">Neural Networks & Deep Learning</h4>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">Coursera Course</h4>
+                      <p className="text-muted-foreground">Foundation of Deep Learning</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Freelance Work Section */}
         <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-8 md:p-12">
           <div className="text-center mb-8">
