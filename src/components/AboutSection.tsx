@@ -200,6 +200,36 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* GitHub Profile Section */}
+        <div className="mb-16 bg-gradient-to-br from-gray-500/10 to-gray-600/10 rounded-3xl p-8 md:p-12">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              My <span className="gradient-text">GitHub</span>
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Check out my repositories and contributions
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <a 
+              href="https://github.com/kasif1234"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block max-w-4xl w-full transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/github-profile.png" 
+                  alt="GitHub Profile - Mohammad Kashif"
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         {/* Certifications Section */}
         <div className="mb-16 bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-8 md:p-12 overflow-hidden">
           <div className="text-center mb-8">
