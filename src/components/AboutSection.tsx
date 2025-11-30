@@ -244,6 +244,23 @@ const AboutSection = () => {
           <div className="relative">
             <div className="overflow-x-auto overflow-y-hidden scrollbar-hide">
               <div className="flex gap-8 pb-4">
+                {/* Deep Learning Specialization by Andrew Ng */}
+                <div className="flex-shrink-0 w-80 md:w-96">
+                  <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/deep-learning-specialization-andrew-ng.png" 
+                        alt="Deep Learning Specialization by Andrew Ng"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold mb-2">Deep Learning Specialization</h4>
+                      <p className="text-muted-foreground">by Andrew Ng - Coursera</p>
+                    </div>
+                  </div>
+                </div>
+
                 {/* AIX Hackathon */}
                 <div className="flex-shrink-0 w-80 md:w-96">
                   <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
@@ -310,133 +327,6 @@ const AboutSection = () => {
                       <p className="text-muted-foreground">Research Institute Certificate</p>
                     </div>
                   </div>
-                </div>
-
-                {/* Deep Learning Specialization */}
-                <div className="flex-shrink-0 w-80 md:w-96">
-                  <a 
-                    href="/lovable-uploads/deep-learning-5-courses.pdf" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                  >
-                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
-                      <div className="text-center">
-                        <div className="text-6xl mb-4">🎓</div>
-                        <h4 className="text-xl font-bold mb-2">Deep Learning Specialization</h4>
-                        <p className="text-sm text-muted-foreground">5 Courses Completed</p>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h4 className="text-xl font-bold mb-2">Coursera Specialization</h4>
-                      <p className="text-muted-foreground">Deep Learning by Andrew Ng</p>
-                    </div>
-                  </a>
-                </div>
-
-                {/* Neural Networks Certificate */}
-                <div className="flex-shrink-0 w-80 md:w-96">
-                  <a 
-                    href="/lovable-uploads/neural-networks-deep-learning.pdf" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                  >
-                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
-                      <div className="text-center">
-                        <div className="text-6xl mb-4">🧠</div>
-                        <h4 className="text-xl font-bold mb-2">Neural Networks & Deep Learning</h4>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h4 className="text-xl font-bold mb-2">Coursera Course</h4>
-                      <p className="text-muted-foreground">Foundation of Deep Learning</p>
-                    </div>
-                  </a>
-                </div>
-
-                {/* Convolutional Neural Networks */}
-                <div className="flex-shrink-0 w-80 md:w-96">
-                  <a 
-                    href="/lovable-uploads/convolutional-neural-networks.pdf" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                  >
-                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
-                      <div className="text-center">
-                        <div className="text-6xl mb-4">🎯</div>
-                        <h4 className="text-xl font-bold mb-2">Convolutional Neural Networks</h4>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h4 className="text-xl font-bold mb-2">Coursera Course</h4>
-                      <p className="text-muted-foreground">Computer Vision & CNNs</p>
-                    </div>
-                  </a>
-                </div>
-
-                {/* Improving Deep Neural Networks */}
-                <div className="flex-shrink-0 w-80 md:w-96">
-                  <a 
-                    href="/lovable-uploads/improving-deep-neural-networks.pdf" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                  >
-                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
-                      <div className="text-center">
-                        <div className="text-6xl mb-4">⚡</div>
-                        <h4 className="text-xl font-bold mb-2">Improving Deep Neural Networks</h4>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h4 className="text-xl font-bold mb-2">Coursera Course</h4>
-                      <p className="text-muted-foreground">Hyperparameter Tuning & Optimization</p>
-                    </div>
-                  </a>
-                </div>
-
-                {/* Sequence Models */}
-                <div className="flex-shrink-0 w-80 md:w-96">
-                  <a 
-                    href="/lovable-uploads/sequence-models.pdf" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                  >
-                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
-                      <div className="text-center">
-                        <div className="text-6xl mb-4">🔄</div>
-                        <h4 className="text-xl font-bold mb-2">Sequence Models</h4>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h4 className="text-xl font-bold mb-2">Coursera Course</h4>
-                      <p className="text-muted-foreground">RNNs, LSTMs & Attention</p>
-                    </div>
-                  </a>
-                </div>
-
-                {/* Structuring ML Projects */}
-                <div className="flex-shrink-0 w-80 md:w-96">
-                  <a 
-                    href="/lovable-uploads/structuring-ml-projects.pdf" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                  >
-                    <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center p-8">
-                      <div className="text-center">
-                        <div className="text-6xl mb-4">📊</div>
-                        <h4 className="text-xl font-bold mb-2">Structuring ML Projects</h4>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h4 className="text-xl font-bold mb-2">Coursera Course</h4>
-                      <p className="text-muted-foreground">ML Strategy & Best Practices</p>
-                    </div>
-                  </a>
                 </div>
 
               </div>
