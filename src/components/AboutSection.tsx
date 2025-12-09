@@ -124,7 +124,7 @@ const AboutSection = () => {
                   <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <div className="aspect-[4/3] overflow-hidden">
                       <img 
-                        src="/lovable-uploads/arduino-project.jpg" 
+                        src="/lovable-uploads/arduino-project.png"
                         alt="Arduino Project"
                         className="w-full h-full object-cover"
                       />
@@ -163,7 +163,7 @@ const AboutSection = () => {
                   <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <div className="aspect-[4/3] overflow-hidden">
                       <img 
-                        src="/lovable-uploads/arduino-project.jpg" 
+                        src="/lovable-uploads/arduino-project.png" 
                         alt="Arduino Project"
                         className="w-full h-full object-cover"
                       />
