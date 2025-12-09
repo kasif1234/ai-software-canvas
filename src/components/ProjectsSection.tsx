@@ -56,6 +56,21 @@ const ProjectsSection = () => {
 
   const completedProjects = [
     {
+      title: "Computer Interface - Smart Defence Turret",
+      organization: "Qatar University",
+      organizationLogo: "/lovable-uploads/bc83b7d9-83e2-4a2f-9b6a-91a46d1360e6.png",
+      projectImage: "/lovable-uploads/smart-defence-turret.png",
+      description: "This project integrates MATLAB and Arduino to develop an intelligent, semi-autonomous defence-turret prototype capable of detecting, tracking, and engaging moving targets. The system combines a dual-servo pan–tilt mechanism, a laser-based firing module, and a Sensor Fusion block that merges Lidar and Ultrasonic inputs to estimate obstacle distance with greater accuracy. MATLAB App Designer functions as the supervisory control interface, providing the user with sliders, toggles, real-time distance displays, and a live tracking window. User commands generated in the GUI are transmitted to the Arduino microcontroller through a serial communication link, where they are interpreted into servo angles, laser-PWM values, and mode-selection behaviours. This MATLAB × Arduino architecture enables seamless coordination between high-level decision-making and low-level hardware actuation, resulting in a functional prototype capable of both manual and automated target engagement.",
+      technicalDetails: "The system architecture integrates MATLAB App Designer for supervisory control with real-time GUI elements including sliders, toggles, and distance displays. Hardware components include a dual-servo pan-tilt mechanism for precise aiming, laser-based firing module with PWM control, and Sensor Fusion combining Lidar and Ultrasonic sensors for enhanced distance estimation. Serial communication enables seamless command transmission between MATLAB and Arduino microcontroller for servo angle control and mode selection.",
+      supervisor: {
+        name: "Dr. Uvais Qidwai",
+        linkedin: "https://www.linkedin.com/in/uvais-qidwai-b099256/",
+        description: "Research conducted under the supervision of Dr. Uvais Qidwai at Qatar University. Dr. Qidwai specializes in computer vision, robotics, and embedded systems, providing expert guidance on the integration of MATLAB-based control systems with Arduino hardware."
+      },
+      videoLink: "https://youtube.com/shorts/k0XmWMUzhRQ?si=Gurd1tGKQm7JGFCR",
+      tags: ["MATLAB", "Arduino", "Sensor Fusion", "Lidar", "Ultrasonic", "Servo Control", "Real-time Systems", "Robotics", "Computer Interface"]
+    },
+    {
       title: "Contributing to HCT-QA: A Benchmark for Question Answering on Human-Centric Tables [Experiment, Analysis & Benchmark]",
       organization: "Qatar Computing Research Institute (QCRI) - Hamad Bin Khalifa University",
       organizationLogo: "/lovable-uploads/0c9530a6-8407-4b3e-a292-c72db84a7a58.png",
