@@ -10,20 +10,6 @@ const ProjectsSection = () => {
 
   const inProgressProjects = [
     {
-      title: "Surgical Data Semantic Segmentation",
-      organization: "Hamad Medical Corporation",
-      organizationLogo: "/lovable-uploads/c06a3d46-48ff-4dda-aca9-822d5d0e2a46.png",
-      projectImage: "/lovable-uploads/145c731b-d3be-4b20-866d-db3bc133917d.png",
-      description: "Train a deep learning model on EndoVis2017 dataset. Your model needs to segment the different types of classes within the surgical frame. Dataset classes: Bipolar Forceps, Prograsp Forceps, Large Needle Driver, Suction Instrument, Clip Applier, Monopolar, Curved Scissors, Ultrasound Probe, Vessel Sealer, Grasping Retractor.",
-      technicalDetails: "The model architecture combines CNN feature extraction with Transformer layers for semantic segmentation. Features are processed through multiple scales (1/2, 1/4, 1/8) with hidden features, linear projection, and transformer layers (n=12). The segmentation head uses Conv3x3, ReLU, upsampling, and feature concatenation for precise surgical instrument identification.",
-      supervisor: {
-        name: "Dr. Shidin Balakrishnan, MD, MPH",
-        linkedin: "https://www.linkedin.com/in/shidin-balakrishnan/",
-        description: "Dr. Shidin Balakrishnan is a medical professional with expertise in public health and a focus on leveraging technology for healthcare advancements. His work often involves applying data-driven approaches and AI to improve medical diagnostics and patient outcomes."
-      },
-      tags: ["Computer Vision", "Deep Learning", "Medical AI", "Semantic Segmentation", "PyTorch"]
-    },
-    {
       title: "Text2SQL Pipeline Development",
       organization: "Qatar Computing Research Institute (QCRI) - Hamad Bin Khalifa University",
       organizationLogo: "/lovable-uploads/9c94f0a0-c8f8-455b-9b6c-1595a33420d6.png",
@@ -37,7 +23,10 @@ const ProjectsSection = () => {
         description: "Research conducted under the mentorship of Dr. Michaël Aupetit at Qatar Computing Research Institute (QCRI) and Shahmeer Ahmad. The project focuses on advancing natural language to SQL translation capabilities through innovative pipeline design and comprehensive evaluation methodologies."
       },
       tags: ["NLP", "Text2SQL", "GPT-4", "Pipeline Development", "Research", "LLM", "Data Generation", "SQL"]
-    },
+    }
+  ];
+
+  const completedProjects = [
     {
       title: "Swarm Drone Coordination System - Senior Development Project",
       organization: "Qatar University",
@@ -51,10 +40,21 @@ const ProjectsSection = () => {
         description: "Senior Development Project supervised by Amr Mohamed at Qatar University. The project focuses on advanced robotics, swarm intelligence, and autonomous systems with applications in surveillance, search-and-rescue operations, and environmental monitoring."
       },
       tags: ["Reinforcement Learning", "Swarm Intelligence", "Computer Vision", "Autonomous Navigation", "Robotics", "Object Detection", "Real-time Systems"]
-    }
-  ];
-
-  const completedProjects = [
+    },
+    {
+      title: "Surgical Data Semantic Segmentation",
+      organization: "Hamad Medical Corporation",
+      organizationLogo: "/lovable-uploads/c06a3d46-48ff-4dda-aca9-822d5d0e2a46.png",
+      projectImage: "/lovable-uploads/145c731b-d3be-4b20-866d-db3bc133917d.png",
+      description: "Train a deep learning model on EndoVis2017 dataset. Your model needs to segment the different types of classes within the surgical frame. Dataset classes: Bipolar Forceps, Prograsp Forceps, Large Needle Driver, Suction Instrument, Clip Applier, Monopolar, Curved Scissors, Ultrasound Probe, Vessel Sealer, Grasping Retractor.",
+      technicalDetails: "The model architecture combines CNN feature extraction with Transformer layers for semantic segmentation. Features are processed through multiple scales (1/2, 1/4, 1/8) with hidden features, linear projection, and transformer layers (n=12). The segmentation head uses Conv3x3, ReLU, upsampling, and feature concatenation for precise surgical instrument identification.",
+      supervisor: {
+        name: "Dr. Shidin Balakrishnan, MD, MPH",
+        linkedin: "https://www.linkedin.com/in/shidin-balakrishnan/",
+        description: "Dr. Shidin Balakrishnan is a medical professional with expertise in public health and a focus on leveraging technology for healthcare advancements. His work often involves applying data-driven approaches and AI to improve medical diagnostics and patient outcomes."
+      },
+      tags: ["Computer Vision", "Deep Learning", "Medical AI", "Semantic Segmentation", "PyTorch"]
+    },
     {
       title: "Computer Interface - Smart Defence Turret",
       organization: "Qatar University",
