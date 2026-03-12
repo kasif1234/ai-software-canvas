@@ -75,6 +75,48 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* YouTube Channel Section */}
+        <div className="mb-16 bg-gradient-to-br from-red-500/10 to-red-600/10 rounded-3xl p-8 md:p-12">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              My <span className="gradient-text">YouTube Channel</span>
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Check out my videos and subscribe to my channel
+            </p>
+          </div>
+
+          <div className="flex justify-center mb-6">
+            <div className="max-w-3xl w-full aspect-video rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/0_sPNWkz-VE"
+                title="YouTube Channel Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <a
+              href="https://www.youtube.com/watch?v=0_sPNWkz-VE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+                <polygon fill="white" points="9.545,15.568 15.818,12 9.545,8.432"/>
+              </svg>
+              Visit My YouTube Channel
+            </a>
+          </div>
+        </div>
+
         {/* LinkedIn Section */}
         <div className="mb-16 bg-gradient-to-br from-blue-500/10 to-blue-600/10 rounded-3xl p-8 md:p-12">
           <div className="text-center mb-8">
